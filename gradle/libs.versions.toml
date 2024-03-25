@@ -1,0 +1,13 @@
+[versions]
+kotlin = "1.9.23"
+kotlinxCoroutinesCore = "1.8.0"
+
+[libraries]
+kotlinxCoroutines = { group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-core", version.ref = "kotlinxCoroutinesCore" }
+kotlinGradlePlugin = { group = "org.jetbrains.kotlin", name = "kotlin-gradle-plugin", version.ref = "kotlin" }
+kotlinJvm = { group = "org.jetbrains.kotlin.jvm", name = "org.jetbrains.kotlin.jvm.gradle.plugin", version.ref = "kotlin" }
+
+[bundles]
+
+[plugins]
+kotlinJvm = { id = "org.jetbrains.kotlin.jvm", version.ref = "kotlin" }
